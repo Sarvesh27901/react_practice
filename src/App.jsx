@@ -18,7 +18,7 @@ function App() {
   }
 
 
-let removeVale=()=>{
+let removeValue=()=>{
   if (count>0){
     setCount(count-1)
   }
@@ -28,12 +28,13 @@ let removeVale=()=>{
   return (
     <>
       <h1> Addition and Subtraction game</h1>
-      <h3>current value: {counter}</h3>
+      <br/>
+      <h3>Current value: {count}</h3>
       <button
       onClick={addValue}>
         Add Value
       </button>
-      <button onClick={removeVale}>
+      <button onClick={removeValue}>
         Remove Value
       </button>
     </>
